@@ -4,9 +4,9 @@ from BusCompany import Towns
 from BusCompany import Roads
 
 destination1 = ['Apple Vill', 'Blue Ville', 'Cranberry',
-                'Dog Town', 'EveryoneVill', 'FriendsVille']
+                'Dog Town', 'EveryoneVill', 'FriendsVille']  # list of destinations
 destination2 = ['Georgia', 'Houston', 'Ithica',
-                'Joseph', 'Kentucky', 'Loserville']
+                'Joseph', 'Kentucky', 'Loserville']  # list of destinations
 roads = ['Bella RD', 'Jam DR', 'Short RD', 'Tall Ave', 'Schumacaer Ave']
 busPeople = []
 bus = Buses().busCount()

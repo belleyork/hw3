@@ -22,7 +22,6 @@ people = 0
 busPeople.append(person1.name)  # appends person1 into the list busPeople
 
 for i in range(len(destination1)):
-    a = Towns(destination1[i], destination2[i])
     bus += 1
 
     newBus = 'Buses().' + 'bus' + str(bus) + '()'
@@ -44,5 +43,8 @@ for i in range(len(destination1)):
         if people > len(roads) - 1:
             people = int(people / 9)
 
+    r = Roads(roads[int(people)])
+    a = Towns(destination1[i], destination2[i])
+
     print('bus_' + str(bus) + ' is going to town ' +
-          a.town1 + ' and town ' + a.town2 + content + ' and it is traveling on ' + roads[int(people)] + '.')
+          a.town1 + ' and town ' + a.town2 + content + ' and it is traveling on ' + r.roads() + '.')

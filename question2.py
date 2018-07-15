@@ -28,7 +28,7 @@ for i in range(len(destination1)):
     newBus = 'Buses().' + 'bus' + str(bus) + '()'
     newBus = eval(newBus)  # turns string into
 
-    if len(busPeople) > newBus:  # if the amount of people that want to go on the bus is greating tjan the seating of bus then it is full
+    if len(busPeople) > newBus:  # if the amount of people that want to go on the bus is greater than the seating of bus then it is full
         content = ' is full'
     else:  # otherwise it is not
         content = ' has a seat'
